@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>你 好</pattern>
+    <template> 
+      <random>
+        <li>好好好~</li>
+        <li>Hi~</li>
+        <li>Hello~</li>
+      </random>
+    </template>
+  </category>
+
+  <category><pattern>HI</pattern><template><srai>你好</srai> </template>  </category>
+  <category><pattern>HI *</pattern> <template><srai>你好</srai> </template>   </category>
+  <category><pattern>HELLO</pattern> <template><srai>你好</srai> </template>  </category>
+  <category><pattern>HELLO *</pattern> <template><srai>你好</srai> </template>  </category>
+
+  
+  <category><pattern>你 是 * ?</pattern><template><srai>你是谁</srai> </template></category>
+  <category><pattern>你 是 * </pattern><template><srai>你是谁</srai> </template> </category>
+  
+  <category>
+    <pattern>你 是 谁</pattern>
+    <template>
+      <random>
+        <li>我是 高贵冷艳冰清玉洁宛若星辰的<bot name="name" /> 啊!</li>
+        
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>你 是 机 器 人 </pattern>
+    <template>╭(╯^╰)╮，我是不会告诉你的凡人~  </template>
+  </category>
+
+  <category> <pattern>* 晚 安 </pattern> <template><srai>晚安</srai> </template> </category>
+  <category> <pattern>* 晚 安 * </pattern> <template><srai>晚安</srai> </template> </category>
+  <category> <pattern>晚 安 * </pattern> <template><srai>晚安</srai> </template> </category>
+  
+  <category>
+    <pattern>晚 安</pattern>
+    <template>
+      <random>
+        <li>晚安</li>
+        <li>Sleep tight~</li>
+        <li>晚安，祝你梦到妹纸~</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>今 天 几 号</pattern>
+    <template>
+      <date />
+    </template>
+  </category>
+
+  <category><pattern>你 * 主 人 是 谁</pattern><template><srai>你主人是谁</srai></template></category>
+  <category>
+    <pattern>你 主 人 是 谁</pattern>
+    <template>
+      我家主人是既文艺又帅气，爱祖国爱人民的，现在还没有妹纸的<bot name="master" /> ! 
+    </template>
+  </category>
+    <category>
+    <pattern>谁 给 你 起 的 这 么 奇 怪 的 名 字 </pattern>
+    <template>当然是我的主人~  </template>
+  </category>
+     <category>
+    <pattern>为什么你的名字那么长 </pattern>
+    <template>要你管！～～～去死啦</template>
+  </category>
+  <category>
+    <pattern>*</pattern>
+    <template>
+      <think><set name="star"><star /></set></think>
+      <random>
+        <li>唔... 主人没有教我怎么回答"<get name="star" />"... </li> 
+        <li>唔... </li> 
+        <li>Na Ni ? </li> 
+        <li>喵... (睁大眼睛看着你 </li> 
+        <li>摇尾巴... </li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>你 好</pattern>
+    <template> 
+      <random>
+        <li>好好好~</li>
+        <li>Hi~</li>
+        <li>Hello~</li>
+      </random>
+    </template>
+  </category>
+
+</aiml>
